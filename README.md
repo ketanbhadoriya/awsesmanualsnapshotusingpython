@@ -1,7 +1,9 @@
 # awsesmanualsnapshot
-Download the python script from this repository to use python interactive tool for manual snapshot in AWS Elasticsearch.
+**Download the python script from this repository to use python interactive tool for manual snapshot in AWS Elasticsearch.
 
 ![alt text](https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/ElasticSearch-Manual-Snapshots-00.png)
+
+*The given pyton script will automate all the steps mentioned in the above image*
 
 ### Please note few points about the same python script:
 
