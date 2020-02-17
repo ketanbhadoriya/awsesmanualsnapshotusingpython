@@ -28,7 +28,7 @@ Download the python script from this repository to use python interactive tool f
     - AmazonS3FullAccess 
     - AmazonEC2FullAccess 
   
-3. SSH into the same EC2 instance and configure AWS CLI using above IAM user (Please refer to configure AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+3. SSH into the same EC2 instance and configure AWS CLI using credentials of above IAM user (Please refer to configure AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 
 4. One new AWS ES domain with same configuration as of the old AWS ES domain (and if needed then enable 'Encryption at rest' option) of which you will take the manual snapshot using given python script.
 
