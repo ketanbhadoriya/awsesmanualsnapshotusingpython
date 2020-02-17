@@ -113,7 +113,7 @@ def creating_snapshot_repo():
     global s3bucket_name
     global snapshot_rolename
 
-    account_id = raw_input("Enter the account ID: ")  # IAM user account ID
+    account_id = raw_input("Enter your AWS Account ID: ")  # IAM user account ID
     iam_user = raw_input("Enter your IAM user name: ")  # IAM username
     policyformanualsnapshottoiamuser = raw_input(
         "Enter a name for the policy that you would like to add to given IAM user for manual snapshot: ")  # policy_for_manual_snapshot_to_iamuser
