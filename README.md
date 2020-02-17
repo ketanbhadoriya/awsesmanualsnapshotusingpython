@@ -11,10 +11,10 @@ Download the python script from this repository to use python interactive tool f
 
 4. This script best suited in follwing scenarios:
 
-  - If you want to enable encryption at rest option on an existing AWS Elasticsearch cluster, you will have to first create a new AWS Elasticsearch cluster with same configuration of already existing AWS Elasticsearch cluster and enabling 'Encryption at Rest' option too while creating this new AWS Elasticsearch cluster. 
-  - Once the new AWS Elasticsearch cluster is created with required configuration, you can proceed taking manual snapshot of already existing AWS Elasticsearch cluster and restoring data using this manual snapshot into newly created AWS Elasticsearch cluster.
+    - If you want to enable encryption at rest option on an existing AWS Elasticsearch cluster, you will have to first create a new AWS Elasticsearch cluster with same configuration of already existing AWS Elasticsearch cluster and enabling 'Encryption at Rest' option too while creating this new AWS Elasticsearch cluster. 
+    - Once the new AWS Elasticsearch cluster is created with required configuration, you can proceed taking manual snapshot of already existing AWS Elasticsearch cluster and restoring data using this manual snapshot into newly created AWS Elasticsearch cluster.
   
-  - Lastly, for some reason if you want to duplicate the data of already existing AWS ES cluster into into a new AWS ES cluster in the same region, you can achieve that using given python script.
+    - Lastly, for some reason if you want to duplicate the data of already existing AWS ES cluster into into a new AWS ES cluster in the same region, you can achieve that using given python script.
   
 
 ## Prerequites to run this python script
@@ -23,10 +23,10 @@ Download the python script from this repository to use python interactive tool f
 
 2. An IAM user who will run the given python script on an AWS EC2 Linux instance. This IAM user needs to have an 'Adminstrator access' or a role attached with following aws managed policies:
 
-  - IAMFullAccess 
-  - AmazonESFullAccess
-  - AmazonS3FullAccess 
-  - AmazonEC2FullAccess 
+    - IAMFullAccess 
+    - AmazonESFullAccess
+    - AmazonS3FullAccess 
+    - AmazonEC2FullAccess 
   
 3. SSH into the same EC2 instance and configure AWS CLI using above IAM user (Please refer to configure AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 
@@ -48,12 +48,12 @@ Download the python script from this repository to use python interactive tool f
 
 4. After this, download the python file attached in the repository using followinng command:
 
-  - $ wget --- command
+    - $ wget --- command
   
 5. Once the python file downloaded successfully to the EC2 instance, run following command:
 
-  - $ chmod 700 manualsnapshotawses.py
+    - $ chmod 700 manualsnapshotawses.py
   
 6. Lastly, go ahead and run the script using:
 
-  - $ python manualsnapshotawses.py
+    - $ python manualsnapshotawses.py
