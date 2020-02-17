@@ -77,4 +77,10 @@
 
     - $ python manualsnapshotawses.py
     
+Once you will run the tool you will be asked to put different inputs which you should have make note of as given in Prerequites.
+
+**Below is the screengrab of the same python tool after you finish it! (Note: The account ID has been kept hidden for security reasons)**
+
+
+    
 ***Image Reference:*** https://github.com/miztiik/AWS-Demos/tree/master/How-To/setup-manual-elasticsearch-snapshots
