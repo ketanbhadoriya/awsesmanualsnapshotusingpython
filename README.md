@@ -4,7 +4,7 @@
 
 ![alt text](https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/ElasticSearch-Manual-Snapshots-00.png)
 
-                  The given pyton script will automate all the steps mentioned in the above image
+                  The given Python Tool will automate all the steps mentioned in the above image
 
 ### Please note few points about the same python script:
 
