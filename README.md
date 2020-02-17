@@ -1,6 +1,6 @@
 # awsesmanualsnapshot
 
-*A Python Interactive tool for manual snapshot in AWS Elasticsearch.
+- A Python Interactive tool for manual snapshot in AWS Elasticsearch.
 
 ![alt text](https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/ElasticSearch-Manual-Snapshots-00.png)
 
