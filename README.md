@@ -46,9 +46,9 @@ Download the python script from this repository to use python interactive tool f
 
     - $ sudo pip install requests-aws4auth
 
-4. After this, download the python file attached in the repository using followinng command:
+4. After this, download the python file attached on the EC2 instance using followinng command:
 
-    - $ wget --- command
+    - $ wget https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/manualsnapshotawses.py
   
 5. Once the python file downloaded successfully to the EC2 instance, run following command:
 
