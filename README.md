@@ -23,10 +23,10 @@ Download the python script from this repository to use python interactive tool f
 
 2. An IAM user who will run the given python script on an AWS EC2 Linux instance. This IAM user needs to have an 'Adminstrator access' or a role attached with following aws managed policies:
 
-  . IAMFullAccess 
-  . AmazonESFullAccess
-  . AmazonS3FullAccess 
-  . AmazonEC2FullAccess 
+  - IAMFullAccess 
+  - AmazonESFullAccess
+  - AmazonS3FullAccess 
+  - AmazonEC2FullAccess 
   
 3. SSH into the same EC2 instance and configure AWS CLI using above IAM user (Please refer to configure AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
 
@@ -40,7 +40,7 @@ Download the python script from this repository to use python interactive tool f
 
 3. Run following commands one by one:
 
-  - $ sudo yum -y install python-pip
+  -                 $ sudo yum -y install python-pip
 
   - $ sudo pip install boto3
 
