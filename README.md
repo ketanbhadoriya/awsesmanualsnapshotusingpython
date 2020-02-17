@@ -1,7 +1,7 @@
 # awsesmanualsnapshot
 Download the python script from this repository to use python interactive tool for manual snapshot in AWS Elasticsearch.
 
-## Please note few points about the same python script:
+### Please note few points about the same python script:
 
 1. It will help in taking the manual snapshot of AWS Elasticsearch cluster and restoring it into another AWS Elasticsearch cluster, if chose to do so (Cross Region is not supported - Both AWS Elasticsearch clusters need to be in the same region).
 
@@ -17,7 +17,7 @@ Download the python script from this repository to use python interactive tool f
     - Lastly, for some reason if you want to duplicate the data of already existing AWS ES cluster into into a new AWS ES cluster in the same region, you can achieve that using given python script.
   
 
-## Prerequites to run this python script
+### Prerequites to run this python script
 
 1. An AWS EC2 Linux Instance 
 
@@ -32,7 +32,7 @@ Download the python script from this repository to use python interactive tool f
 
 4. One new AWS ES domain with same configuration as of the old AWS ES domain (and if needed then enable 'Encryption at rest' option) of which you will take the manual snapshot using given python script.
 
-## Steps to follow to run the given Python script:
+### Steps to follow to run the given Python script:
 
 1. Make sure you have all the prerequistes mentioned above.
 
