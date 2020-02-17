@@ -58,4 +58,4 @@ Download the python script from this repository to use python interactive tool f
 
     - $ python manualsnapshotawses.py
     
-*** Image Reference: *** https://github.com/miztiik/AWS-Demos/tree/master/How-To/setup-manual-elasticsearch-snapshots
+***Image Reference:*** https://github.com/miztiik/AWS-Demos/tree/master/How-To/setup-manual-elasticsearch-snapshots
