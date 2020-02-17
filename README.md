@@ -40,7 +40,7 @@ Download the python script from this repository to use python interactive tool f
 
 3. Run following commands one by one:
 
-  -                 $ sudo yum -y install python-pip
+  - $ sudo yum -y install python-pip
 
   - $ sudo pip install boto3
 
