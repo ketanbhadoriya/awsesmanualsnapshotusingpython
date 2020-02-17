@@ -40,11 +40,11 @@ Download the python script from this repository to use python interactive tool f
 
 3. Run following commands one by one:
 
-  - $ sudo yum -y install python-pip
+    - $ sudo yum -y install python-pip
 
-  - $ sudo pip install boto3
+    - $ sudo pip install boto3
 
-  - $ sudo pip install requests-aws4auth
+    - $ sudo pip install requests-aws4auth
 
 4. After this, download the python file attached in the repository using followinng command:
 
