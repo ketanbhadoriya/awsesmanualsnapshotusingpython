@@ -41,13 +41,13 @@
 
 6. After all this created, please make note of:
 
-  - Endpoint of ES domain of which you want to take the manual snapshot
-  - Region of ES domain of which you want to take the manual snapshot
-  - Your AWS Account ID
-  - Your IAM User Name
-  - ES domain ARN of which you are going to take manual snapshot
-  - Name of S3 bucket created earlier (Just the name, not full ARN)
-  - Endpoint of ES domain if you wish to restore the manual snapshot taken. 
+    - Endpoint of ES domain of which you want to take the manual snapshot
+    - Region of ES domain of which you want to take the manual snapshot
+    - Your AWS Account ID
+    - Your IAM User Name
+    - ES domain ARN of which you are going to take manual snapshot
+    - Name of S3 bucket created earlier (Just the name, not full ARN)
+    - Endpoint of ES domain if you wish to restore the manual snapshot taken. 
   
 7. **Note**: If for some reason you want to restore the manual snapshot later, please make note of snapshot respository that you will be creating while running this script.
 
