@@ -1,6 +1,8 @@
 # awsesmanualsnapshot
 Download the python script from this repository to use python interactive tool for manual snapshot in AWS Elasticsearch.
 
+![alt text](https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/ElasticSearch-Manual-Snapshots-00.png)
+
 ### Please note few points about the same python script:
 
 1. It will help in taking the manual snapshot of AWS Elasticsearch cluster and restoring it into another AWS Elasticsearch cluster, if chose to do so (Cross Region is not supported - Both AWS Elasticsearch clusters need to be in the same region).
