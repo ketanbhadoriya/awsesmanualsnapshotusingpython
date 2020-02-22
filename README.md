@@ -85,4 +85,4 @@ Once you will run the tool you will be asked to put different inputs which you s
 
 ![alt text](https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/ScreeGrabofPythonTool.png)
 
-Thanks for viewing, I hope that you found this tool helpful!
+*Thanks for viewing, I hope that you found this tool helpful!
