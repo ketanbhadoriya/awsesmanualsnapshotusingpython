@@ -6,8 +6,6 @@
 
                   The given Python Tool will automate all the steps mentioned in the above image
 
-***Image Reference:*** https://github.com/miztiik/AWS-Demos/tree/master/How-To/setup-manual-elasticsearch-snapshots
-
 ### Please note few points about the same python script:
 
 1. It will help in taking the manual snapshot of AWS Elasticsearch cluster and restoring it into another AWS Elasticsearch cluster, if chose to do so (Cross Region is not supported - Both AWS Elasticsearch clusters need to be in the same region).
