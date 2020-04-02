@@ -2,7 +2,7 @@
 
 - A Python Interactive tool for manual snapshot in AWS Elasticsearch.
 
-![alt text](https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/ElasticSearch-Manual-Snapshots-00.png)
+![alt text](https://raw.githubusercontent.com/ksingh7575/awsesmanualsnapshotusingpython/master/AWSESManualSnapshot.png)
 
                   The given Python Tool will automate all the steps mentioned in the above image
 
