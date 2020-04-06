@@ -21,7 +21,7 @@
   
     - Lastly, for some reason if you want to duplicate the data of already existing AWS ES cluster into into a new AWS ES cluster in the same region, you can achieve that using given python script.
 
-### VIMP NOTE: Before going to prereqsites, please check the following:
+### VIMP NOTE: Before going to prerequisites, please check the following:
 
 If you have enabled fine grained access for your Amazon Elasticsearch cluster, then please go through the  following steps before jumping to prerequisites section; if fine grained has not been enabled then you can directly proceed with prerequisites section:
 
