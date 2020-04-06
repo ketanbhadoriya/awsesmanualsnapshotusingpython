@@ -12,7 +12,7 @@
 
 2. The manual snapshot will be taken of the whole cluster. Indices level snapshot is not supported by the given python script.
 
-3. While restoring the snapshot taken, please note that it will delete all the old indices (including .kibana* indices) of the AWS Elastcisearch destination cluster where you are restoring the data using manual snapshot.
+3. While restoring the snapshot taken, please note that it will delete all the old indices (including .kibana* indices) of AWS Elastcisearch destination cluster where you are restoring the data using manual snapshot.
 
 4. This script best suited in follwing scenarios:
 
