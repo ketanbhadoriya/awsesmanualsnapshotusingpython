@@ -23,7 +23,7 @@
 
 ### VIMP NOTE: Before going to prerequisites, please check the following:
 
-If you have enabled fine grained access for your Amazon Elasticsearch cluster, then please go through the  following steps before jumping to prerequisites section; if fine grained has not been enabled then you can directly proceed with prerequisites section:
+If you have enabled fine grained access for your Amazon Elasticsearch cluster, then please go through the  following steps before jumping to prerequisites section; if fine grained has not been enabled then you can ignore the below steps and directly proceed with prerequisites section:
 
 	i. If you have Set IAM ARN as master user then -> Select your AWS ES domain and choose action ----> Modify master user -> And in the "IAM ARN" field paste IAM user ARN (which you are using to register the snapshot repository) -> After this proceed with the prerequisites 
 
