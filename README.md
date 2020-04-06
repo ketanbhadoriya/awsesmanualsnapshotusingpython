@@ -20,7 +20,23 @@
     - Once the new AWS Elasticsearch cluster is created with required configuration, you can proceed taking manual snapshot of already existing AWS Elasticsearch cluster and restoring data using this manual snapshot into newly created AWS Elasticsearch cluster.
   
     - Lastly, for some reason if you want to duplicate the data of already existing AWS ES cluster into into a new AWS ES cluster in the same region, you can achieve that using given python script.
-  
+
+### VIMP NOTE: Before going to prereqsites, please check the following:
+
+If you have enabled fine grained access for your Amazon Elasticsearch cluster, then please go through the  following steps before jumping to prerequisites section; if fine grained has not been enabled then you can directly proceed with prerequisites section:
+
+	i. If you have Set IAM ARN as master user then -> Select your AWS ES domain and choose action ----> Modify master user -> And in the "IAM ARN" field paste IAM user ARN (which you are using to register the snapshot repository) -> After this proceed with the prerequisites 
+
+												OR
+
+	ii. If you have created a master user (i.e. you have master user name and master password) then -> Login to the Kibana console -> Follow below steps -> After this proceed with the prerequisites: 
+
+		1. After logging in, on the left side menu, choose "security" (lock icon). 
+		2. In the next window choose the role mappings.
+		3. Click the "+" icon next to the search field.
+		4. In the next window, from the role drop down choose "manage_snapshots" role.
+		5. In the users section add the IAM user ARN (which you are using to register the snapshot repository) "arn:aws:iam::<put_account_id_here>:user/<put_IAM_user_name_here>" and click submit.
+
 
 ### Prerequites to run this python script
 
