@@ -114,7 +114,7 @@ def creating_snapshot_repo():
     global snapshot_rolename
 
     account_id = raw_input("Enter your AWS Account ID: ")  # IAM user account ID
-    iam_user = raw_input("Enter your IAM user name: ")  # IAM username
+    iam_role = raw_input("Enter your IAM role name (not full ARN): ")  # IAM username
     policyformanualsnapshottoiamuser = raw_input(
         "Enter a name for the policy that you would like to add to given IAM user for manual snapshot: ")  # policy_for_manual_snapshot_to_iamuser
     es_domain_arn = raw_input("Enter ES domain ARN of which you are going to take manual snapshot:")  # AWS ES domain ARN
@@ -204,8 +204,8 @@ def creating_snapshot_repo():
     time.sleep(3)
 
     # Above Policy has been attached to given IAM user
-    response3 = client.put_user_policy(
-        UserName=iam_user,
+    response3 = client.put_role_policy(
+        RoleName=iam_role,
         PolicyName=policyformanualsnapshottoiamuser,
         PolicyDocument=iampolicy_document_manual_snapshot)
 
