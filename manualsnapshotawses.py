@@ -113,10 +113,10 @@ def creating_snapshot_repo():
     global s3bucket_name
     global snapshot_rolename
 
-    account_id = raw_input("Enter your AWS Account ID: ")  # IAM user account ID
-    iam_role = raw_input("Enter your IAM role name (which you have attached your EC2 instance; just name, not full ARN): ")  # IAM Role
+    account_id = raw_input("Enter your AWS Account ID: ")  #  account ID
+    iam_role = raw_input("Enter your IAM role name (not full ARN): ")  # IAM role attached to EC2 instance
     policyformanualsnapshottoiamrole = raw_input(
-        "Enter a name for the policy that you would like to add to given IAM role for manual snapshot: ")  # policy_for_manual_snapshot_to_iamrole
+        "Enter a name for the policy that you would like to add to given IAM role for manual snapshot: ")  # policy_for_manual_snapshot_to_iamuser
     es_domain_arn = raw_input("Enter ES domain ARN of which you are going to take manual snapshot:")  # AWS ES domain ARN
     s3bucket_name = raw_input("Enter your S3 bucket name where you want to register the snapshot repository: ")  # S3 Bucket Input
     snapshot_rolename = raw_input("Enter a name for snapshot role that you would like to create: ")  # Rolname needs to be created for snapshot
@@ -183,7 +183,7 @@ def creating_snapshot_repo():
     time.sleep(15)
     print("66% Completed!")
 
-    # Creation of policy that needs to be attached to IAM user by passing given snapshot role
+    # Creation of policy that needs to be attached to IAM role by passing given snapshot role
     iampolicy_document_manual_snapshot = json.dumps({
         "Version": "2012-10-17",
         "Statement": [
@@ -203,7 +203,7 @@ def creating_snapshot_repo():
     # sleep
     time.sleep(3)
 
-    # Above Policy has been attached to given IAM user
+    # Above Policy has been attached to given IAM role attached to EC2 instance
     response3 = client.put_role_policy(
         RoleName=iam_role,
         PolicyName=policyformanualsnapshottoiamrole,
