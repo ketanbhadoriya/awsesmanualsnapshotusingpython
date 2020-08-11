@@ -42,15 +42,33 @@ If you have enabled fine grained access for your Amazon Elasticsearch cluster, t
 
 1. An AWS EC2 Linux Instance 
 
-2. An IAM user who will run the given python script on an AWS EC2 Linux instance. This IAM user needs to have an 'Adminstrator access' or a role attached with following aws managed policies:
+2. An IAM Role (this is not snapshot role, that will be created by this python script) with EC2 as the service (Allows EC2 instances to call AWS services on your behalf) and attach the following managed policies:
+	- "iam:CreateRole",
+	- "iam:PutRolePolicy",
+	- "iam:PassRole"
+	
+   The policy attached to the above IAM role should something like below:
+   {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateRole",
+                "iam:PutRolePolicy",
+                "iam:PassRole"
+            ],
+            "Resource": [
+                "arn:aws:iam::<aws_account_id>:user/*",
+                "arn:aws:iam::<aws_account_id>:role/*"
+            ]
+        }
+    ]
+}
 
-    - IAMFullAccess 
-    - AmazonESFullAccess
-    - AmazonS3FullAccess 
-    - AmazonEC2FullAccess 
+3. Attach this role as an Instance profile role to the EC2 instance. This you can do by going to the EC2 console, select the EC2, click on Actions -> Instance settings -> Attach/Replace IAM role and select the role you created above and attach it.
   
-3. SSH into the same EC2 instance and configure AWS CLI using credentials of above IAM user (Please refer to configure AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-
 4. One new AWS ES domain with same configuration as of the old AWS ES domain (and if needed then enable 'Encryption at rest' option) of which you will take the manual snapshot using given python script.
 
 5. One S3 bucket to register manual snapshot repository.
@@ -60,7 +78,7 @@ If you have enabled fine grained access for your Amazon Elasticsearch cluster, t
     - Endpoint of ES domain of which you want to take the manual snapshot
     - Region of ES domain of which you want to take the manual snapshot
     - Your AWS Account ID
-    - Your IAM User Name
+    - Your IAM Role Name (which you are going to use to sign the request)
     - ES domain ARN of which you are going to take manual snapshot
     - Name of S3 bucket created earlier (Just the name, not full ARN)
     - Endpoint of ES domain if you wish to restore the manual snapshot taken. 
